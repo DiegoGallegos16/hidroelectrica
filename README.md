@@ -16,11 +16,17 @@ Estructura del Proyecto
 
 📂 Proyecto
 ├── 📄 index.html          # Página principal (marcador de asistencia)
+
 ├── 📄 admin.html          # Panel de administración
+
 ├── 📄 script.js           # Lógica del marcador de asistencia
+
 ├── 📄 admin.js            # Lógica del panel de administración
+
 ├── 📄 styles.css          # Estilos de la interfaz
+
 ├── 📄 launch.json         # Configuración de lanzamiento
+
 └── 📄 README.md           # Documentación del proyecto
 
 Instalación y Uso

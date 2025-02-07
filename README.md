@@ -1,4 +1,4 @@
-Marcador de Asistencia
+Marcador de Asistencia Para Empresa Chanleufu, Lagrimas Del Sur SPA.
 
 Este es un sistema de gestión de asistencia desarrollado en HTML, CSS y JavaScript. Permite a los usuarios registrar su asistencia y a los administradores gestionar registros y generar reportes en PDF.
 

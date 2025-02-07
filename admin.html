@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Panel de Administrador</h1>
+    </header>
+
+    <main>
+        <form id="register-form">
+            <label for="admin-username">Usuario:</label>
+            <input type="text" id="admin-username" name="admin-username" required>
+
+            <label for="admin-password">Contraseña:</label>
+            <input type="password" id="admin-password" name="admin-password" required>
+
+            <button type="submit">Registrar Administrador</button>
+        </form>
+
+        <form id="login-form" style="display: none;">
+            <label for="login-username">Usuario:</label>
+            <input type="text" id="login-username" name="login-username" required>
+
+            <label for="login-password">Contraseña:</label>
+            <input type="password" id="login-password" name="login-password" required>
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <div id="admin-actions" style="display: none;">
+            <h3>Eliminar Asistencia</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Asistencia</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-list"></tbody>
+            </table>
+            <button id="logout-button">Cerrar Sesión</button>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

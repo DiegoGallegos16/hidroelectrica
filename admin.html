@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Administrador</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Panel de Administrador</h1>
+    </header>
+
+    <main>
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form">
+            <label for="admin-username">Usuario:</label>
+            <input type="text" id="admin-username" name="admin-username" required placeholder="Ingrese su usuario">
+
+            <label for="admin-password">Contraseña:</label>
+            <input type="password" id="admin-password" name="admin-password" required placeholder="Ingrese su contraseña">
+
+            <button type="submit">Iniciar Sesión</button>
+        </form>
+
+        <div id="admin-actions" style="display: none;">
+            <h3>Agregar Administrador</h3>
+            <form id="admin-registration-form">
+                <label for="register-username">Nombre de Usuario:</label>
+                <input type="text" id="register-username" required placeholder="Ingrese el nombre de usuario">
+                
+                <label for="register-password">Contraseña:</label>
+                <input type="password" id="register-password" required placeholder="Ingrese la contraseña">
+                
+                <button type="submit">Registrar Administrador</button>
+            </form>
+
+            <h3>Cambiar Contraseña</h3>
+            <form id="change-password-form">
+                <label for="new-password">Nueva Contraseña:</label>
+                <input type="password" id="new-password" required placeholder="Ingrese la nueva contraseña">
+                <button type="submit">Cambiar Contraseña</button>
+            </form>
+
+            <h3>Eliminar Asistencia</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Asistencia</th>
+                        <th>Fecha</th>
+                        <th>Hora</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="admin-list"></tbody>
+            </table>
+            <button id="logout-button">Cerrar Sesión</button>
+        </div>
+    </main>
+
+    <script src="admin.js"></script>
+</body>
+</html>

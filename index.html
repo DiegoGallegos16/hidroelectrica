@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcador de Asistencia</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Marcador de Asistencia</h1>
+        <button id="admin-button" onclick="window.location.href='admin.html'">Acceder al Menú de Administrador</button>
+    </header>
+
+    <main>
+        <div id="attendance-section">
+            <form id="attendance-form">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
+
+                <label for="attendance">Asistencia:</label>
+                <select id="attendance" name="attendance" required>
+                    <option value="presente">Presente</option>
+                    <option value="ausente">Ausente</option>
+                </select>
+
+                <button type="submit">Marcar Asistencia</button>
+            </form>
+
+            <div id="attendance-list">
+                <h2>Lista de Asistencia</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Asistencia</th>
+                            <th>Fecha</th>
+                            <th>Hora</th>
+                        </tr>
+                    </thead>
+                    <tbody id="list"></tbody>
+                </table>
+                <button id="download-pdf">Descargar PDF</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

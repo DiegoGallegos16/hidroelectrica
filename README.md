@@ -1,0 +1,1 @@
+Este es un proyecto hecho por mi persona y dirigido a la empresa Chanleufu, Lagrimas del sur SPA. Consta de un programa de asistencia creado con el fin de reemplazar el sitema del libro el cual esta quedando obsoleto.
